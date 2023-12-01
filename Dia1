@@ -1,0 +1,152 @@
+import 'package:intl/intl.dart';
+void main(){
+ 
+  //laço de repetição - while
+ 
+  var num1 = 0;
+  while (num1<=978){
+    print(num1);
+    num1++;
+  }
+ 
+  /*
+    var basico = ['feijao', 'arroz','macarrao','carne', 'ovo', 'frutas'];
+ 
+    for (var n in basico){
+      print(n);
+    }
+  */
+  /*
+  //laços de repetição - for/para
+    var num1 = [1,2,3,4,5,6,7,8,9];
+    for(var n in num1 ){
+      print(n)
+    }
+  */
+  /*
+  var frutas = ['abacaxi', 'maça','laraja','uva'];
+  var num1 = [1,2,3,4,5,6,7,8,9];
+  var qualquerCoisa = ['sapato, placa mae, ovo', 15];
+  qualquerCoisa.add('Morius');
+  qualquerCoisa.remove(15);
+  frutas.removeAt(1);
+ 
+  print (frutas.join(', '));
+  print (num1.join(', '));
+  print (qualquerCoisa.join(', '));
+  */
+  /*
+  var idade = 26;
+  var temAutorizacao = false;
+
+  if(idade >=18 || temAutorizacao){
+    print ('Pode entrar');
+  }else{
+    print('Nao pode entrar');
+  }
+*/
+  /*
+  //if/else
+  var nome = 'Bruno Adacmzyk';
+  var nota1 = 20;
+  var nota2 = 60;
+  var nota3 = 50;
+  var nota4 = 100;
+  var faltas = 4;
+  double media = (nota1 + nota2 + nota3 + nota4) / 4;
+  if (media < 40  || faltas > 5) {
+    print('$nome foi reprovado com a media $media');
+  } else {
+    if (media > 60) {
+    print('$nome foi aprovado com a media $media');
+  } else {
+    print('$nome ficou de recuperação com a media $media');
+  }
+  }
+  */
+  /*
+      var nome = 'Bruno Adacmzyk';
+      var idade = 19;
+  if (idade >= 18){
+   
+    print('$nome é de maior');
+ 
+  }else{
+   
+    print('$nome é de menor');
+   
+  }
+  */
+  /*
+  //DataTime Declaraçaao e formatação de datas
+ 
+  DateTime agora = DateTime.now();
+  DateFormat formato = DateFormat('dd-MM-yyyy');
+  String dataFormatada = formato.format(agora);
+  print ('Data: $dataFormatada');
+  */
+  /*
+  dynamic qualquercoisa = 'Carlos';
+ 
+  qualquercoisa = 'Bruno';
+   
+  qualquercoisa = 1533124564;
+   
+  print ('Dynamic aceita qualquer tipos ====> $qualquercoisa ');
+ 
+
+  //variavei tipo bool
+  bool aprovado = true;
+ 
+  bool casado = false;
+ 
+  print ('O aluno foi aprovado? $aprovado');
+  print ('É casado? $casado');
+
+      var nome = 'Bruno Adacmzyk';
+      var nota1 = 70;
+      var nota2 = 60;
+      var nota3 = 50;
+      var nota4 = 100;
+  double media = (nota1+nota2+nota3+nota4) / 4;
+  if (media >= 60){
+   
+    print('$nome foi aprovado com a media $media');
+ 
+  }else{
+   
+        print('$nome foi reprovado com a media $media');
+   
+  }
+   //variaveis double
+    double salario = 10000.8;
+    var aumento = 20;
+    double aumentoTotal = (salario * aumento) / 100;
+    double salarioNovo = salario+aumentoTotal;
+    print ('O salario é: $salario');
+    print ('O aumento dá: $aumentoTotal');
+    print ('O salario Total é: R\$ $salarioNovo');
+ 
+   //strings e int
+    var nome = 'Bruno';
+    var sobrenome = 'Adamczyk';
+    int idade = 15;
+    int idadeH = 16;
+    double somaIdades = idade + idadeH;
+    int num1 = 3;
+    double mediaIdade = (somaIdades) / num1;
+    print('Meu nome completo é $nome $sobrenome e tenho $idade anos.');
+    print (mediaIdades);
+   
+   //int
+    var nome = 'Bruno';
+    var sobrenome = 'Adamczyk';
+    int idade = 15;
+    int idadeH = 16;
+    int somaIdades = idade + idadeH;
+    int num1 = 3;
+    double mediaIdade = (somaIdades) / num1;
+    print('Meu nome completo é $nome $sobrenome e tenho $idade anos.');
+    print (mediaIdade);
+  */
+}
