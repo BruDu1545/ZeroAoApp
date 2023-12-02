@@ -1,0 +1,81 @@
+void main() {
+  /*
+  print('Main - antes de chamar função.');
+
+  somentePrint();
+
+  print('Main - depois de chamar função.');
+*/
+  /*
+  print('A área do triangulo é: ${calcularAreaCirculo(3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339360726024914127372458700660631558817488152092096282925409171536436789259036001133053054882046652138414695194151160943305727036575959195309218611738193261179310511854807446237996274956735188575272489122793818301194912, 5)} cm²');
+  */
+  /*
+  print('A soma dos números é : ${somar(n1: 50, n2: null)}');
+  */
+  /*
+  print('A Multiplicação dos números é : ${multiplicar(n1: 50, n2: 10)}');
+  */
+  /*
+  print ('Dados do cliente \n ${dadosCliente('Bruno Carletto Adamczyk', '(45) 9 99853-4658')}');
+  */
+  /*
+    print('A area do quadrado é : ${areaQuadrado(l1:10, l2:30)}');
+  */
+  /*
+  print (funcaAnonima());
+  */
+  
+  var produtos = funcaAnonima1();
+  print('Lista dos produtos mais vendidos');
+  print('--------------------------------');
+    for (var n in produtos){
+      print(n);
+    }
+}
+
+void somentePrint() {
+  print('Antes de imprimir.');
+
+  print('Olá, estou dentro da função.');
+
+  print('Depois de imprimir.');
+}
+
+ double calcularAreaCirculo(double pi, double raio){
+  return (pi*(raio*raio));
+}
+   
+ double calcularAreaTriangulo(double base, double altura){
+  return (base*altura) / 2;
+}
+
+ double somar({double n1=0, double? n2}) {
+   /*
+   if(n2 == null){
+     n2=0;
+   }
+   */
+     n2 ??= 0;
+     return n1 + n2;
+   }
+
+ double multiplicar({required double n1,  required double n2}) {
+     return n1 * n2;
+   }
+
+ String dadosCliente([String? nome, String? telefone]){
+   nome ??='Nome nao informado.';  
+   telefone ??='telefone nao informado';
+   return 'Nome: $nome \n Telefone: $telefone';
+ }
+
+ double areaQuadrado({required double l1,  required double l2}) => l1 * l2;
+ 
+ var funcaAnonima = (){
+   return 'NAOOOOOOOOOOOOOOOOOOOOOOOOO!!!!!!!!!!!!!';
+ };
+
+ var funcaAnonima1 = (){
+        return ['monitor', 'teclado','panetone','mouse', 'tv', 'pc gamer', 'cabo HDMI'];
+    };
+ 
